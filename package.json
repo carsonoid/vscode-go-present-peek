@@ -1,6 +1,6 @@
 {
-  "name": "vscode-file-peek",
-  "displayName": "File Peek",
+  "name": "vscode-go-present-peek",
+  "displayName": "Go Present Peek",
   "description": "Allow peeking to file name strings as definitions from javascript and typescript code.  Allows peek and goto definition. Great for Angular template and style files)",
   "icon": "images/file_peek_icon.png",
   "license": "MIT",
@@ -11,14 +11,14 @@
     "angular"
   ],
   "version": "1.0.1",
-  "publisher": "abierbaum",
+  "publisher": "carsonoid",
   "bugs": {
-    "url": "https://github.com/abierbaum/vscode-file-peek/issues"
+    "url": "https://github.com/carsonoid/vscode-go-present-peek/issues"
   },
-  "homepage": "https://github.com/abierbaum/vscode-file-peek/blob/master/README.md",
+  "homepage": "https://github.com/carsonoid/vscode-go-present-peek/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/abierbaum/vscode-file-peek.git"
+    "url": "https://github.com/carsonoid/vscode-go-present-peek.git"
   },
   "engines": {
     "vscode": "^0.10.6"
@@ -34,14 +34,12 @@
     "commands": [],
     "configuration": {
       "type": "object",
-      "title": "File Peek extension configuration",
+      "title": "Go Present Peek extension configuration",
       "properties": {
         "file_peek.activeLanguages": {
           "type": "array",
           "default": [
-            "typescript",
-            "javascript",
-            "python"
+            "markdown"
           ],
           "items": {
             "type": "string"
@@ -50,7 +48,9 @@
         },
         "file_peek.searchFileExtensions": {
           "type": "array",
-          "default": [".js", ".ts", ".html", ".css", ".scss"],
+          "default": [
+            ".go"
+          ],
           "items": {
             "type": "string"
           },

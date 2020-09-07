@@ -1,16 +1,8 @@
 # Functionality
 
-This extension extends Typescript and Javascript code editing with `Go To Definition` support for filenames found in strings within the source code.
+This extension adds peek support to go present `.slide` files when they use the markdown format. You can also manually enable support for the old play syntax by registering it's file type with this extension's settings.
 
-I created this extension for use with Angular 2 component definitions. The idea is to allow quickly jumping to or peeking into files that are referenced from your source.  For example if there is an html or css file referenced this will allow jumping to that file as the "definition" of the string name of the file in the source code.
-
-![working](images/working.gif)
-
-The extension supports all the normal capabilities of symbol definition tracking, but does it for file names.  This includes:
-
- * Peek: load the file inline and make quick edits right there. (`Ctrl+Shift+F12`)
- * Go To: jump directly to the file or open it in a new editor (`F12`)
- * Hover: show the definition in a hover over the symbol (`Ctrl+hover`)
+This makes it much easier to edit files referenced by the `.code` and `.play` commands that can be used in presentations. Allowing inline edits to the files with ease!
 
 See editor docs for more details
  * [Visual Studio Code: Goto Definition](https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition)
@@ -18,40 +10,13 @@ See editor docs for more details
 
 # Notes
 
-I recommend using the `editor.stablePeek` setting to keep the peek editor open across double clicks and escape.  This makes the view work much better for embedded editing.
+Recommended settings:
 
-
-# Backlog
-
-Current idea list.  Please add any you think would be useful...
-
-  * ...
-
-# Contributing
-
-Contributions are greatly appreciated.  Please fork the repository and submit a pull request.
+* `"editor.stablePeek": true` -  To keep the peek editor open across double clicks and escape
+* `"editor.definitionLinkOpensInPeek": true` - To make control-click open peeks instead of files by default
 
 # Changelog
 
 ## 1.0.0
 
-  * Added configuration option:
-    * Set languages where plugin is active
-    * Set list of extra file extensions to check for looking up files
-  * Updated dependencies
-
-## 0.3.1
-
-  * Expanded documentation
-
-## 0.3.0
-
-  * Added icon for package
-
-## 0.2.0
-
-  * Improved lookup of file strings to handle corner case with variables of the same name as the files.
-
-## 0.1.0
-
-  * First version released.
+  * Shamelessly copied from https://github.com/pranaygp/vscode-css-peek
