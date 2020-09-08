@@ -28,3 +28,7 @@ Recommended settings:
 ## 1.0.1
 
   * Shamelessly copied from https://github.com/pranaygp/vscode-css-peek
+
+## Thanks To
+
+* Maria Letta for the logo: https://github.com/MariaLetta/free-gophers-pack
