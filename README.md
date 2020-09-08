@@ -17,6 +17,10 @@ Recommended settings:
 
 # Changelog
 
-## 1.0.0
+## 1.0.2
+
+  * Cleanup file lookup code and fix finding of non-go files
+
+## 1.0.1
 
   * Shamelessly copied from https://github.com/pranaygp/vscode-css-peek
