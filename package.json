@@ -1,8 +1,8 @@
 {
   "name": "vscode-go-present-peek",
   "displayName": "Go Present Peek",
-  "description": "Allow peeking to file name strings as definitions from javascript and typescript code.  Allows peek and goto definition. Great for Angular template and style files)",
-  "icon": "images/file_peek_icon.png",
+  "description": "Allow peeking to files referenced by .code and .play commands in go present files.",
+  "icon": "images/icon.png",
   "license": "MIT",
   "keywords": [
     "peek",
@@ -10,7 +10,7 @@
     "file",
     "angular"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "carsonoid",
   "bugs": {
     "url": "https://github.com/carsonoid/vscode-go-present-peek/issues"

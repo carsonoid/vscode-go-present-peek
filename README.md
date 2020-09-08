@@ -17,6 +17,10 @@ Recommended settings:
 
 # Changelog
 
+## 1.0.3
+
+  * Rework icon
+
 ## 1.0.2
 
   * Cleanup file lookup code and fix finding of non-go files
